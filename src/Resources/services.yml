@@ -1,0 +1,16 @@
+services:
+  slack.client:
+    class: Navy\SlackPlugin\Slack\Client
+    arguments:
+      - %slack.token%
+      - @logger
+      - %slack.user_agent%
+
+  slack.utils:
+    class: Navy\SlackPlugin\Slack\SlackUtils
+
+  slack.slack_adapter_resolver:
+    class: Navy\SlackPlugin\Notifier\SlackAdapterResolver
+    arguments:
+      - @slack.client
+      - @slack.utils

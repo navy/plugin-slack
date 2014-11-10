@@ -1,0 +1,31 @@
+{
+    "name": "navy/plugin-slack",
+    "description": "This navy plugin provides slack integration",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Katsuhiro OGAWA",
+            "email": "ogawa@crocos.co.jp"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/crocos/navy"
+        }
+    ],
+    "require": {
+        "crocos/navy": "dev-master",
+        "psr/log": "*",
+        "symfony/dependency-injection": "*",
+    },
+    "require-dev": {
+        "phake/phake": "dev-master",
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Navy\\SlackPlugin\\": "src/"
+        }
+    }
+}
