@@ -11,13 +11,13 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/crocos/navy"
+            "url": "https://github.com/navy/navy"
         }
     ],
     "require": {
-        "crocos/navy": "dev-master",
+        "navy/navy": "dev-master",
         "psr/log": "*",
-        "symfony/dependency-injection": "*",
+        "symfony/dependency-injection": "*"
     },
     "require-dev": {
         "phake/phake": "dev-master",
